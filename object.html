@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        obj=new Object();
+        obj.name="poojitha";
+        obj.age=22;
+
+        obj1=new Object();
+        obj1.name="vaishnavi";
+        obj1.age=22;
+    </script>
+    <script>
+        function Emp(name, age , salary){
+         this.name=name;
+         this.age=age;
+         this.salary=salary;
+        }
+    </script>
+    <script>
+        var e={'name':'vaishali','age':24,'salary':40000};
+        var e1={'name':'bhumika','age':22,'salary':10000};
+</script>
+</head>
+<body>
+
+    <h1> First Type Of Object Creation</h1>
+    <script>
+        document.write('<h2> By Using Object Constructor </h2>')
+        document.write('name  '+obj.name);
+        document.write('<br>Age  '+obj.age);
+        document.write('<br>Name  '+obj1.name);
+        document.write('<br>Age  '+obj1.age);
+    </script>
+    <h1>Second Type Of Object Creation</h1>
+    <script>
+        var emp=new  Emp('poojitha',22,25000);
+        var emp1=new  Emp('vaishnavi',22,25000);
+        document.write('<h2> By Using Object Constructor </h2>')
+        document.write('name  '+emp.name);
+        document.write('<br>Age  '+emp.age);
+        document.write('<br>Salary  '+emp.salary);
+        document.write('<br>Name  '+emp1.name);
+        document.write('<br>Age  '+emp1.age);
+        document.write('<br>Salary  '+emp1.salary);
+    </script>
+     <h1>Third Type Of Object Creation</h1>
+     <script>
+         
+         document.write('<h2> By Using json </h2>')
+         document.write('name  '+e.name);
+         document.write('<br>Age  '+e.age);
+         document.write('<br>Salary  '+e.salary);
+         document.write('<br>Name  '+e1.name);
+         document.write('<br>Age  '+e1.age);
+         document.write('<br>Salary  '+e1.salary);
+     </script>
+    
+</body>
+</html>
